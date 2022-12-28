@@ -24,5 +24,10 @@ namespace CharactiaryProject
         {
             InitializeComponent();
         }
+
+        private void GridSplitter_DragCompleted(object sender, System.Windows.Controls.Primitives.DragCompletedEventArgs e)
+        {
+
+        }
     }
 }

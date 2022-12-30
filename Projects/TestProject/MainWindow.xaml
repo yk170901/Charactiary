@@ -4,11 +4,16 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:TestProject"
+        xmlns:mvvms="clr-namespace:TestProject.MVVM"
         mc:Ignorable="d"
         FontSize="22"
         Title="MainWindow"
         Height="450"
         Width="800">
+    <Window.Resources>
+        <BooleanToVisibilityConverter x:Key="BoolToVisb"/>
+    </Window.Resources>
+    
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*" />
@@ -31,5 +36,12 @@
                     Command="{Binding ClickCancelCommand}" />
         </StackPanel>
 
+        <Grid Grid.Column="1">
+            <StackPanel>
+                <mvvms:UserControl1 Height="100" />
+                <mvvms:UserControl2 Height="100" />
+                <mvvms:UserControl3 Height="100" />
+            </StackPanel>
+        </Grid>
     </Grid>
 </Window>

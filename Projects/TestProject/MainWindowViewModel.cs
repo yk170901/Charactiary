@@ -28,28 +28,23 @@ public partial class MainWindowViewModel : ObservableValidator, IRecipient<UserL
     public MainWindowViewModel(IDataAccess dataAcess)
     {
         _dataAccess = dataAcess;
+        var t = Messenger;
+        this.Messenger = new StrongReferenceMessenger();
 
-        var stongMes = new StrongReferenceMessenger();
-
-        this.Messenger = stongMes;
-    }
-
-    public void Init(IMessenger messenger)
-    {
+        Messenger.Register<UserLoggedIn>(this);
     }
 
     private void Foo()
     {
-        //Messenger.Register<UserLoggedIn>(this);
-
         Messenger.Send(new UserLoggedIn("Ava"));
+        Messenger.Unregister<UserLoggedIn>(this);
 
-        //Messenger.Unregister<UserLoggedIn>(this);
+
     }
 
     public void Receive(UserLoggedIn message)
     {
-        Console.WriteLine(message.UserName);
+        MessageBox.Show(message.UserName);
     }
 
 
@@ -65,6 +60,7 @@ public partial class MainWindowViewModel : ObservableValidator, IRecipient<UserL
         }
         catch (OperationCanceledException)
         {
+            Foo();
             FirstName += " x ";
         }
     }

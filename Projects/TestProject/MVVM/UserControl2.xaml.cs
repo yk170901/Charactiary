@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace CharactiaryProject
+namespace TestProject.MVVM
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UserControl2.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UserControl2 : UserControl
     {
-        public MainWindow()
+        public UserControl2()
         {
             InitializeComponent();
         }

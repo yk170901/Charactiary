@@ -10,9 +10,6 @@
   <ItemGroup>
     <Folder Include="Converters\" />
     <Folder Include="Services\" />
-    <Folder Include="Views\Characters\" />
-    <Folder Include="Views\Common\" />
-    <Folder Include="Views\Calendars\" />
   </ItemGroup>
 
   <ItemGroup>

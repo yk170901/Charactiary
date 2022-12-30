@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls.Primitives;
 
 namespace CharactiaryProject.ViewModels
 {
@@ -14,7 +15,12 @@ namespace CharactiaryProject.ViewModels
         [RelayCommand]
         void Test()
         {
-            MessageBox.Show("Tedt Command");
+            MessageBox.Show("Test Command");
+        }
+
+        public void OnDragCompleted(object sender, DragCompletedEventArgs e)
+        {
+            MessageBox.Show(e.HorizontalChange.ToString());
         }
     }
 }

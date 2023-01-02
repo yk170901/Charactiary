@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace inSANer.Managers
 {
-    internal class ProjectManager
+    internal class ScenarioManager
     {
 
         // OR MAYBE THESE SHOULD BE AT MODEL (Project)

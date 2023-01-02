@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inSANer.ViewModels
+namespace inSANer.Models
 {
-    internal class MainWindowViewModel // : ObservableObject
+    internal class Scenario
     {
+        public List<CardFolder> SubFolders { get; set; }
     }
 }

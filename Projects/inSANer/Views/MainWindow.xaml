@@ -62,5 +62,36 @@
                        FontWeight="DemiBold"/>
             </WrapPanel>
         </Border>
+
+        <WrapPanel Grid.Column="1"
+                   Grid.Row="1"
+                   HorizontalAlignment="Center"
+                   Margin="10">
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="IndianRed" />
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="CadetBlue" />
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="IndianRed" />
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="CadetBlue" />
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="IndianRed" />
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="CadetBlue" />
+        </WrapPanel>
+
     </Grid>
 </Window>

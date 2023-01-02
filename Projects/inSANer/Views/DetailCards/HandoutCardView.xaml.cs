@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace inSANer.Views
+namespace inSANer.Views.DetailCards
 {
     /// <summary>
-    /// Interaction logic for ProjectFolderView.xaml
+    /// Interaction logic for HandoutCardView.xaml
     /// </summary>
-    public partial class ProjectFolderView : UserControl
+    public partial class HandoutCardView : UserControl
     {
-        public ProjectFolderView()
+        public HandoutCardView()
         {
             InitializeComponent();
         }

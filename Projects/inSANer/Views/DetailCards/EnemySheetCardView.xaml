@@ -1,15 +1,16 @@
-﻿<UserControl x:Class="inSANer.Views.MiniCardContainerView"
+﻿<UserControl x:Class="inSANer.Views.DetailCards.EnemySheetCardView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:inSANer.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="982"
-             d:DesignWidth="1728">
-    <!-- Height : Mainwindow Height - PathGuider Height -->
-    <!-- Width : Mainwindow Width - Sidebar Width -->
+             xmlns:local="clr-namespace:inSANer.Views.DetailCards"
+             mc:Ignorable="d"
+             d:DesignHeight="654"
+             d:DesignWidth="576">
+    <!-- Height : DetailCardContainer Height -->
+    <!-- Width : DetailCardContainer Width / 3 -->
     
     <Grid>
+        
     </Grid>
 </UserControl>

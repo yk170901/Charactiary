@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inSANer.Models
+namespace inSANer.Models.Db
 {
-    internal class Project
+    internal class Handout
     {
-        public List<CardFolder> SubFolders { get; set; }
     }
 }

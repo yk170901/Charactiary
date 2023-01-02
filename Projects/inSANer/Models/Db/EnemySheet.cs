@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inSANer.ViewModels
+namespace inSANer.Models.Db
 {
-    internal class MainWindowViewModel // : ObservableObject
+    internal class EnemySheet
     {
     }
 }

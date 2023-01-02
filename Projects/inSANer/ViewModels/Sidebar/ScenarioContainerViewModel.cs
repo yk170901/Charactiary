@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inSANer.Managers
+namespace inSANer.ViewModels.Sidebar
 {
-    // May or May not Be Used
-    internal class MessengerManager
+    internal class ScenarioContainerViewModel
     {
     }
 }

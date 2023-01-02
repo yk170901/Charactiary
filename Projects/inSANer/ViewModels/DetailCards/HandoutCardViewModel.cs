@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inSANer.ViewModels
+namespace inSANer.ViewModels.DetailCards
 {
-    internal class MiniCardContainerViewModel : ObservableObject
+    internal class HandoutCardViewModel : ObservableObject, IDetailCard
     {
     }
 }

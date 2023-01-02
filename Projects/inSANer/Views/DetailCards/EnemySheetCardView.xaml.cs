@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace inSANer.Views
+namespace inSANer.Views.DetailCards
 {
     /// <summary>
-    /// Interaction logic for ProjectContainerView.xaml
+    /// Interaction logic for EnemySheetCardView.xaml
     /// </summary>
-    public partial class ProjectContainerView : UserControl
+    public partial class EnemySheetCardView : UserControl
     {
-        public ProjectContainerView()
+        public EnemySheetCardView()
         {
             InitializeComponent();
         }

@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace inSANer.Views
+namespace inSANer.Views.Sidebar
 {
     /// <summary>
-    /// Interaction logic for SidebarView.xaml
+    /// Interaction logic for ScenarioContainerView.xaml
     /// </summary>
-    public partial class SidebarView : UserControl
+    public partial class ScenarioContainerView : UserControl
     {
-        public SidebarView()
+        public ScenarioContainerView()
         {
             InitializeComponent();
         }

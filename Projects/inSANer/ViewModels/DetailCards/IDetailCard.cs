@@ -4,9 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inSANer.ViewModels
+namespace inSANer.ViewModels.DetailCards
 {
-    internal class SidebarViewModel
+    internal interface IDetailCard
     {
+        // Close Button
+        // Title
+        // Desc
+
+
     }
 }

@@ -5,7 +5,14 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:inSANer.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="200"
+             d:DesignWidth="250">
+    <!-- 한 줄에 여섯 개. 가로형 직사각형-->
+    <!--
+        부모 가로margin 10 + 10, 미니카드 가로margin 15 + 15, width 250 기준
+        한 줄에 6개 배치 시 MiniCardContainer Width 1728 - 1680 : 28pixel 만큼 여유
+    -->
+    
     <Grid>
             
     </Grid>

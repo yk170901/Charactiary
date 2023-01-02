@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace inSANer.Views
+namespace inSANer.Views.Sidebar
 {
     /// <summary>
-    /// Interaction logic for DetailCardView.xaml
+    /// Interaction logic for SidebarView.xaml
     /// </summary>
-    public partial class DetailCardView : UserControl
+    public partial class SidebarView : UserControl
     {
-        public DetailCardView()
+        public SidebarView()
         {
             InitializeComponent();
         }

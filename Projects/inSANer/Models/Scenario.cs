@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace inSANer.Models
 {
+    // for ScenarioCardFile & MiniCard & DetailCards (4 kinds of them)
     internal class Scenario
     {
         public List<CardFolder> SubFolders { get; set; }

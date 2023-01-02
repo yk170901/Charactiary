@@ -27,6 +27,8 @@ public partial class MainWindowViewModel : ObservableValidator, IRecipient<UserL
 
     public MainWindowViewModel(IDataAccess dataAcess)
     {
+        // INavigationService test = new();
+
         _dataAccess = dataAcess;
         var t = Messenger;
         this.Messenger = new StrongReferenceMessenger();
@@ -38,8 +40,6 @@ public partial class MainWindowViewModel : ObservableValidator, IRecipient<UserL
     {
         Messenger.Send(new UserLoggedIn("Ava"));
         Messenger.Unregister<UserLoggedIn>(this);
-
-
     }
 
     public void Receive(UserLoggedIn message)

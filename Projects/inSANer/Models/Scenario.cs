@@ -1,4 +1,5 @@
-﻿using System;
+﻿using inSANer.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,5 +11,8 @@ namespace inSANer.Models
     internal class Scenario
     {
         public List<CardFolder> SubFolders { get; set; }
+
+        public MiniCardContainerViewModel MiniCardContainerVM { get; set; }
+        public DetailCardContainerViewModel DetailCardContainerVM { get; set; }
     }
 }

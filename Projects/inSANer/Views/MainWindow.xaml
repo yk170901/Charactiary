@@ -4,13 +4,20 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:inSANer"
+        xmlns:vms_sidebar="clr-namespace:inSANer.ViewModels.Sidebar"
+        xmlns:views_sidebar="clr-namespace:inSANer.Views.Sidebar"
+        xmlns:viewmodels="clr-namespace:inSANer.ViewModels"
         mc:Ignorable="d"
         Title="MainWindow" Height="1080" Width="1920">
-    <Grid>
+    <Window.DataContext>
+        <viewmodels:MainWindowViewModel />
+    </Window.DataContext>
 
+    <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="9*" />
+            <ColumnDefinition Width="*" MinWidth="25" />
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="9*" MinWidth="25" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -18,80 +25,20 @@
             <RowDefinition Height="10*" />
         </Grid.RowDefinitions>
 
+        <ContentControl Content="{Binding SidebarVM}"
+                        Grid.RowSpan="2" />
 
-        <Border Background="PaleGoldenrod"
-                Grid.Column="0"
-                Grid.RowSpan="2">
-            <StackPanel Margin="10">
-                <Button Content=" Test "
-                        FontSize="20"
-                        Padding="10"
-                        Margin="10"/>
-                <Button Content=" Test "
-                        FontSize="20"
-                        Padding="10"
-                        Margin="10" />
-                <Button Content=" Test "
-                        FontSize="20"
-                        Padding="10"
-                        Margin="10" />
-                <Button Content=" Test "
-                        FontSize="20"
-                        Padding="10"
-                        Margin="10" />
-            </StackPanel>
-        </Border>
+        <GridSplitter Grid.Column="1"
+                      ResizeBehavior="PreviousAndNext"
+                      Grid.RowSpan="2"
+                      Width="4"
+                      Background="CadetBlue" />
 
-        <Border Grid.Column="1"
-                Background="CadetBlue">
-            <WrapPanel VerticalAlignment="Center"
-                       Margin="10 0">
-                <Button Content="&lt;"
-                        FontSize="40"
-                        Margin="10"
-                        Padding="10 5"/>
-                <Button Content="&gt;"
-                        FontSize="40"
-                        Margin="10"
-                        Padding="10 5"/>
-                <Label Content="mvvmlight wpf how to raise frame source property wpf c# ."
-                       FontSize="25"
-                       VerticalAlignment="Center"
-                       Margin="10"
-                       Foreground="AliceBlue"
-                       FontWeight="DemiBold"/>
-            </WrapPanel>
-        </Border>
+        <ContentControl Content="{Binding PathGuiderVM}"
+                        Grid.Column="2" />
 
-        <WrapPanel Grid.Column="1"
-                   Grid.Row="1"
-                   HorizontalAlignment="Center"
-                   Margin="10">
-            <Border Width="250"
-                    Margin="15 10"
-                    Height="200"
-                    Background="IndianRed" />
-            <Border Width="250"
-                    Margin="15 10"
-                    Height="200"
-                    Background="CadetBlue" />
-            <Border Width="250"
-                    Margin="15 10"
-                    Height="200"
-                    Background="IndianRed" />
-            <Border Width="250"
-                    Margin="15 10"
-                    Height="200"
-                    Background="CadetBlue" />
-            <Border Width="250"
-                    Margin="15 10"
-                    Height="200"
-                    Background="IndianRed" />
-            <Border Width="250"
-                    Margin="15 10"
-                    Height="200"
-                    Background="CadetBlue" />
-        </WrapPanel>
-
+        <ContentControl Content="{Binding ScenarioExplorerVM}"
+                        Grid.Column="2"
+                        Grid.Row="1" />
     </Grid>
 </Window>

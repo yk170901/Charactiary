@@ -12,8 +12,12 @@
              xmlns:vms_sidebar="clr-namespace:inSANer.ViewModels.Sidebar"
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
-        
+
         <!-- Views -->
+        <DataTemplate DataType="{x:Type vms:ScenarioExplorerViewModel}">
+            <views:ScenarioExplorerView />
+        </DataTemplate>
+        
         <DataTemplate DataType="{x:Type vms:PathGuiderViewModel}">
             <views:PathGuiderView />
         </DataTemplate>

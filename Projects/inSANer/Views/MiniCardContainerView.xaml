@@ -9,7 +9,35 @@
              d:DesignWidth="1728">
     <!-- Height : Mainwindow Height - PathGuider Height -->
     <!-- Width : Mainwindow Width - Sidebar Width -->
-    
+
     <Grid>
+        <WrapPanel Grid.Column="2"
+                   Background="Pink"
+                   Grid.Row="1">
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="IndianRed" />
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="CadetBlue" />
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="IndianRed" />
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="CadetBlue" />
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="IndianRed" />
+            <Border Width="250"
+                    Margin="15 10"
+                    Height="200"
+                    Background="CadetBlue" />
+        </WrapPanel>
     </Grid>
 </UserControl>

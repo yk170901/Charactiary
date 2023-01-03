@@ -2,8 +2,68 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:inSANer"
+             
+             xmlns:views="clr-namespace:inSANer.Views"
+             xmlns:views_dcards="clr-namespace:inSANer.Views.DetailCards"
+             xmlns:views_sidebar="clr-namespace:inSANer.Views.Sidebar"
+             
+             xmlns:vms="clr-namespace:inSANer.ViewModels"
+             xmlns:vms_dcards="clr-namespace:inSANer.ViewModels.DetailCards"
+             xmlns:vms_sidebar="clr-namespace:inSANer.ViewModels.Sidebar"
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
-         
+        
+        <!-- Views -->
+        <DataTemplate DataType="{x:Type vms:PathGuiderViewModel}">
+            <views:PathGuiderView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:MiniCardContainerViewModel}">
+            <views:MiniCardContainerView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:DetailCardContainerViewModel}">
+            <views:DetailCardContainerView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms:MiniCardViewModel}">
+            <views:MiniCardView />
+        </DataTemplate>
+
+
+        <!-- Views.DetailCards -->
+        <DataTemplate DataType="{x:Type vms_dcards:HandoutCardViewModel}">
+            <views_dcards:HandoutCardView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms_dcards:MasterSceneCardViewModel}">
+            <views_dcards:MasterSceneView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms_dcards:EnemySheetCardViewModel}">
+            <views_dcards:EnemySheetCardView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms_dcards:RitualSheetCardViewModel}">
+            <views_dcards:RitualSheetCardView />
+        </DataTemplate>
+
+        <!-- Views.Sidebar -->
+        <DataTemplate DataType="{x:Type vms_sidebar:SidebarViewModel}">
+            <views_sidebar:SidebarView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms_sidebar:ScenarioContainerViewModel}">
+            <views_sidebar:ScenarioContainerView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms_sidebar:ScenarioCardFolderViewModel}">
+            <views_sidebar:ScenarioCardFolderView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms_sidebar:ScenarioCardFileViewModel}">
+            <views_sidebar:ScenarioCardFileView />
+        </DataTemplate>
+        
     </Application.Resources>
 </Application>

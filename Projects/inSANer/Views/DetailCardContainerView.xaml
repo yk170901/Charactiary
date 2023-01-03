@@ -7,8 +7,8 @@
              mc:Ignorable="d"
              d:DesignHeight="654"
              d:DesignWidth="1728">
-    <!-- Height : PathGuider Height * (2/3) -->
-    <!-- Width : Mainwindow Width - Sidebar Width -->
+    <!-- Height : ScenarioExplorer Height * (2/3) -->
+    <!-- Width : ScenarioExplorer Width -->
 
     <Grid>
         <Grid.RowDefinitions>

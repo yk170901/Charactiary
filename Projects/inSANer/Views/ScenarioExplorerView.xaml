@@ -4,9 +4,30 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:inSANer.Views"
+             xmlns:vm="clr-namespace:inSANer.ViewModels"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DataContext="{d:DesignInstance Type=vm:ScenarioExplorerViewModel}"
+             d:DesignHeight="1080"
+             d:DesignWidth="1728">
+    <!-- Height : Mainwindow Height -->
+    <!-- Width : Mainwindow Width - Sidebar Width -->
     <Grid>
-            
+        <Grid.RowDefinitions>
+            <RowDefinition Height="98" /> <!-- Path Guider Height -->
+            <RowDefinition Height="Auto" MinHeight="25" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+
+        <ContentControl Content="{Binding PathGuiderVM}" />
+        
+        <ContentControl Content="{Binding MiniCardContainerVM}"
+                        Grid.Row="1"/>
+        
+        <ContentControl Content="{Binding DetailCardContainerVM}"
+                        Visibility="Collapsed"
+                        Background="MediumVioletRed"
+                        Grid.Row="2"/>
+
     </Grid>
 </UserControl>

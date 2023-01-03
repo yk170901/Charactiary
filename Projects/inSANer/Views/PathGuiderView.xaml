@@ -7,7 +7,7 @@
              mc:Ignorable="d"
              d:DesignHeight="98"
              d:DesignWidth="1920">
-    <!-- 1/11 of the Height of the Mainwindow (1080/10 = 98) -->
+    <!-- 1/11 of the Height of the ScenarioExplorer (1080/10 = 98) -->
 
     <Grid Background="CadetBlue">
         <WrapPanel VerticalAlignment="Center"

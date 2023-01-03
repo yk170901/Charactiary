@@ -12,7 +12,8 @@ namespace inSANer.Models
     {
         public List<CardFolder> SubFolders { get; set; }
 
-        public MiniCardContainerViewModel MiniCardContainerVM { get; set; }
-        public DetailCardContainerViewModel DetailCardContainerVM { get; set; }
+        public ScenarioExplorerViewModel Explorer { get; set; }
+
+
     }
 }

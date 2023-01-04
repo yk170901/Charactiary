@@ -12,6 +12,9 @@ namespace inSANer.ViewModels
     internal partial class MainWindowViewModel : ObservableObject
     {
         [ObservableProperty]
+        private TopBarViewModel _topBarVM;
+
+        [ObservableProperty]
         private SidebarViewModel _sidebarVM;
 
         [ObservableProperty]
@@ -22,6 +25,7 @@ namespace inSANer.ViewModels
 
         public MainWindowViewModel()
         {
+            _topBarVM = new();
             SidebarVM = new();
             PathGuiderVM = new();
             ScenarioExplorerVM = new();

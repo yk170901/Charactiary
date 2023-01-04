@@ -14,8 +14,7 @@ namespace TestProject;
 
 public record class UserLoggedIn(string UserName);
 
-
-// [ObservableObject]
+// [ObservableObject] // IRecipient Already Inherits ObservableObject
 [ObservableRecipient]
 public partial class MainWindowViewModel : ObservableValidator, IRecipient<UserLoggedIn>
 {

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inSANer.ViewModels.DetailCards
+namespace inSANer.ViewModels.Cards.DetailCards
 {
-    internal class MasterSceneCardViewModel : ObservableObject, IDetailCard
+    internal partial class RitualSheetCardViewModel : ObservableObject, IDetailCard
     {
     }
 }

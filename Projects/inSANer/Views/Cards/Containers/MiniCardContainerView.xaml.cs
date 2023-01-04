@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace inSANer.Views.DetailCards
+namespace inSANer.Views.Cards.Containers
 {
     /// <summary>
-    /// Interaction logic for MasterSceneView.xaml
+    /// Interaction logic for MiniCardContainerView.xaml
     /// </summary>
-    public partial class MasterSceneView : UserControl
+    public partial class MiniCardContainerView : UserControl
     {
-        public MasterSceneView()
+        public MiniCardContainerView()
         {
             InitializeComponent();
         }

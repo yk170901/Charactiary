@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace inSANer.Views.DetailCards
+namespace inSANer.Views.Cards.DetailCards
 {
     /// <summary>
     /// Interaction logic for EnemySheetCardView.xaml

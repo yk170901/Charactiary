@@ -7,15 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace inSANer.ViewModels.Sidebar
+namespace inSANer.ViewModels.ScenarioExplorer
 {
-    internal partial class SidebarViewModel : ObservableObject
+    internal partial class ScenarioExplorerViewModel : ObservableObject
     {
-        public SidebarViewModel()
-        {
-
-
-        }
 
         [RelayCommand]
         public void CreateScenario()

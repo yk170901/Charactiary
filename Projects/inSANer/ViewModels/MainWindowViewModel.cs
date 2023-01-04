@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
-using inSANer.ViewModels.Sidebar;
+using inSANer.ViewModels.Cards.Containers;
+using inSANer.ViewModels.ScenarioExplorer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,19 +16,19 @@ namespace inSANer.ViewModels
         private TopBarViewModel _topBarVM;
 
         [ObservableProperty]
-        private SidebarViewModel _sidebarVM;
+        private ScenarioExplorerViewModel _scenarioExplorerVM;
 
         [ObservableProperty]
         private PathGuiderViewModel _pathGuiderVM;
 
         [ObservableProperty]
-        private ScenarioExplorerViewModel _scenarioExplorerVM;
+        private CardContainerViewModel _cardContainerVM;
 
         public MainWindowViewModel()
         {
-            _topBarVM = new();
-            SidebarVM = new();
+            TopBarVM = new();
             PathGuiderVM = new();
+            CardContainerVM = new();
             ScenarioExplorerVM = new();
         }
     }

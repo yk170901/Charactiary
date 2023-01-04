@@ -13,14 +13,14 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace inSANer.Views
+namespace inSANer.Views.ScenarioExplorer
 {
     /// <summary>
-    /// Interaction logic for ScenarioExplorerView.xaml
+    /// Interaction logic for ScenarioCardFolderView.xaml
     /// </summary>
-    public partial class ScenarioExplorerView : UserControl
+    public partial class ScenarioCardFolderView : UserControl
     {
-        public ScenarioExplorerView()
+        public ScenarioCardFolderView()
         {
             InitializeComponent();
         }

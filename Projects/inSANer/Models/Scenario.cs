@@ -1,4 +1,5 @@
 ﻿using inSANer.ViewModels;
+using inSANer.ViewModels.Cards.Containers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +13,7 @@ namespace inSANer.Models
     {
         public List<CardFolder> SubFolders { get; set; }
 
-        public ScenarioExplorerViewModel Explorer { get; set; }
+        public CardContainerViewModel Container { get; set; }
 
 
     }

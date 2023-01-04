@@ -4,13 +4,18 @@
              xmlns:local="clr-namespace:inSANer"
              
              xmlns:views="clr-namespace:inSANer.Views"
-             xmlns:views_dcards="clr-namespace:inSANer.Views.DetailCards"
-             xmlns:views_sidebar="clr-namespace:inSANer.Views.Sidebar"
+             xmlns:views_cards="clr-namespace:inSANer.Views.Cards.Cards"
+             xmlns:views_dcards="clr-namespace:inSANer.Views.Cards.DetailCards"
+             xmlns:views_container="clr-namespace:inSANer.Views.Cards.Containers"
+             xmlns:views_scnexplr="clr-namespace:inSANer.Views.ScenarioExplorer"
              
              xmlns:vms="clr-namespace:inSANer.ViewModels"
-             xmlns:vms_dcards="clr-namespace:inSANer.ViewModels.DetailCards"
-             xmlns:vms_sidebar="clr-namespace:inSANer.ViewModels.Sidebar"
+             xmlns:vms_cards="clr-namespace:inSANer.ViewModels.Cards.Cards"
+             xmlns:vms_dcards="clr-namespace:inSANer.ViewModels.Cards.DetailCards"
+             xmlns:vms_container="clr-namespace:inSANer.ViewModels.Cards.Containers"
+             xmlns:vms_scnexplr="clr-namespace:inSANer.ViewModels.ScenarioExplorer"
              StartupUri="Views/MainWindow.xaml">
+    
     <Application.Resources>
 
         <!-- Views -->
@@ -18,28 +23,18 @@
             <views:TopBarView />
         </DataTemplate>
 
-        <DataTemplate DataType="{x:Type vms:ScenarioExplorerViewModel}">
-            <views:ScenarioExplorerView />
-        </DataTemplate>
-        
         <DataTemplate DataType="{x:Type vms:PathGuiderViewModel}">
             <views:PathGuiderView />
         </DataTemplate>
+        
 
-        <DataTemplate DataType="{x:Type vms:MiniCardContainerViewModel}">
-            <views:MiniCardContainerView />
+        <!-- Views.Cards.Cards -->
+        <DataTemplate DataType="{x:Type vms_cards:MiniCardViewModel}">
+            <views_cards:MiniCardView/>
         </DataTemplate>
+        
 
-        <DataTemplate DataType="{x:Type vms:DetailCardContainerViewModel}">
-            <views:DetailCardContainerView />
-        </DataTemplate>
-
-        <DataTemplate DataType="{x:Type vms:MiniCardViewModel}">
-            <views:MiniCardView />
-        </DataTemplate>
-
-
-        <!-- Views.DetailCards -->
+        <!-- Views.Cards.DetailCards -->
         <DataTemplate DataType="{x:Type vms_dcards:HandoutCardViewModel}">
             <views_dcards:HandoutCardView />
         </DataTemplate>
@@ -56,22 +51,37 @@
             <views_dcards:RitualSheetCardView />
         </DataTemplate>
 
-        <!-- Views.Sidebar -->
-        <DataTemplate DataType="{x:Type vms_sidebar:SidebarViewModel}">
-            <views_sidebar:SidebarView />
+
+        <!-- Views.Cards.Container -->
+        <DataTemplate DataType="{x:Type vms_container:CardContainerViewModel}">
+            <views_container:CardContainerView />
         </DataTemplate>
 
-        <DataTemplate DataType="{x:Type vms_sidebar:ScenarioContainerViewModel}">
-            <views_sidebar:ScenarioContainerView />
+        <DataTemplate DataType="{x:Type vms_container:MiniCardContainerViewModel}">
+            <views_container:MiniCardContainerView />
         </DataTemplate>
 
-        <DataTemplate DataType="{x:Type vms_sidebar:ScenarioCardFolderViewModel}">
-            <views_sidebar:ScenarioCardFolderView />
+        <DataTemplate DataType="{x:Type vms_container:DetailCardContainerViewModel}">
+            <views_container:DetailCardContainerView />
         </DataTemplate>
 
-        <DataTemplate DataType="{x:Type vms_sidebar:ScenarioCardFileViewModel}">
-            <views_sidebar:ScenarioCardFileView />
+
+        <!-- Views.ScenarioExplorer -->
+        <DataTemplate DataType="{x:Type vms_scnexplr:ScenarioExplorerViewModel}">
+            <views_scnexplr:ScenarioExplorerView />
         </DataTemplate>
         
+        <DataTemplate DataType="{x:Type vms_scnexplr:ScenarioContainerViewModel}">
+            <views_scnexplr:ScenarioContainerView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms_scnexplr:ScenarioCardFolderViewModel}">
+            <views_scnexplr:ScenarioCardFolderView />
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type vms_scnexplr:ScenarioCardFileViewModel}">
+            <views_scnexplr:ScenarioCardFileView />
+        </DataTemplate>
+
     </Application.Resources>
 </Application>

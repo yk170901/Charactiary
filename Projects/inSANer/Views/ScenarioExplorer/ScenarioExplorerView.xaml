@@ -1,12 +1,10 @@
-﻿<UserControl x:Class="inSANer.Views.Sidebar.SidebarView"
+﻿<UserControl x:Class="inSANer.Views.ScenarioExplorer.ScenarioExplorerView"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:local="clr-namespace:inSANer.Views.Sidebar"
-             xmlns:vmTest="clr-namespace:inSANer.ViewModels.Sidebar"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:inSANer.Views.ScenarioExplorer"
              mc:Ignorable="d"
-             d:DataContext="{d:DesignInstance Type=vmTest:SidebarViewModel}"
              d:DesignHeight="1080"
              d:DesignWidth="192">
     <!-- Height : 1080 -->
@@ -15,10 +13,10 @@
         d:DataContext="{d:DesignData Type=vmTest:SidebarViewModel}"
         이건 보이기만 바인딩 해주고 런타임에는 Assign 안 해주는 듯    
     -->
-    
+
     <Grid>
         <Label Content="sidebar"
-               FontSize="20"/>
+               FontSize="20" />
         <Button VerticalAlignment="Bottom"
                 Command="{Binding CreateScenarioCommand}"
                 Content="+ Scenario"

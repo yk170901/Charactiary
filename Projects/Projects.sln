@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestProject", "TestProject\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfLibrary1", "WpfLibrary1\WpfLibrary1.csproj", "{4274F9F6-10A9-4D12-99A9-06760C22D852}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inSANer", "inSANer\inSANer.csproj", "{DC1D15F8-E4F7-4A58-8A95-74D45CB283E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "inSANer", "inSANer\inSANer.csproj", "{DC1D15F8-E4F7-4A58-8A95-74D45CB283E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

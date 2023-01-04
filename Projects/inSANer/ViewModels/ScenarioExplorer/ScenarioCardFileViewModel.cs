@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace inSANer.ViewModels.Sidebar
+namespace inSANer.ViewModels.ScenarioExplorer
 {
-    internal class ScenarioCardFolderViewModel
+    internal class ScenarioCardFileViewModel
     {
     }
 }

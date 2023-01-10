@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:inSANer"
         xmlns:viewmodels="clr-namespace:inSANer.ViewModels"
         mc:Ignorable="d"
+        WindowState="Maximized"
         Title="MainWindow" Height="1080" Width="1920">
     <Window.DataContext>
         <viewmodels:MainWindowViewModel />

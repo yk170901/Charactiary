@@ -51,6 +51,10 @@
             <views_dcards:RitualSheetCardView />
         </DataTemplate>
 
+        <DataTemplate DataType="{x:Type vms_dcards:SceneChartViewModel}">
+            <views_dcards:SceneChartView />
+        </DataTemplate>
+
 
         <!-- Views.Cards.Container -->
         <DataTemplate DataType="{x:Type vms_container:CardContainerViewModel}">

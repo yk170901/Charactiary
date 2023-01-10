@@ -5,8 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CharactiaryProject"
         xmlns:vms="clr-namespace:CharactiaryProject.ViewModels"
-        xmlns:iv="http://schemas.microsoft.com/expression/2010/interactivity" 
-        xmlns:in="http://schemas.microsoft.com/expression/2010/interactions"
+        xmlns:behavior="http://schemas.microsoft.com/xaml/behaviors"
         mc:Ignorable="d"
         Title="MainWindow"
         Height="450"
@@ -49,13 +48,13 @@
             </Grid>
 
             <GridSplitter Width="5">
-                <iv:Interaction.Triggers>
-                    <iv:EventTrigger EventName="DragCompleted">
-                        <in:CallMethodAction TargetObject="{Binding}"
+                <behavior:Interaction.Triggers>
+                    <behavior:EventTrigger EventName="DragCompleted">
+                        <behavior:CallMethodAction TargetObject="{Binding}"
                                              MethodName="OnDragCompleted" />
                         <!--<i:InvokeCommandAction Command="{Binding TestCommand}" />-->
-                    </iv:EventTrigger>
-                </iv:Interaction.Triggers>
+                    </behavior:EventTrigger>
+                </behavior:Interaction.Triggers>
             </GridSplitter>
         </Grid>
         <!--<Viewbox Stretch="Fill">
